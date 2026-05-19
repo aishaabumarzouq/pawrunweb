@@ -528,7 +528,7 @@ export default function Home() {
  
       {/* FOOTER */}
       <footer className="footer">
-        <strong>🐾 PawRun Kuwait</strong>
+        <strong>🐾 <span style={{ color: "var(--brown)"}}>Paw</span><span style={{color: "var(--orange)"}}>Run</span> Kuwait</strong>
         <br /><br />
         Kuwait City, Kuwait &nbsp;·&nbsp; hello@pawrunkuwait.com &nbsp;·&nbsp; 7 days a week
         <br /><br />
