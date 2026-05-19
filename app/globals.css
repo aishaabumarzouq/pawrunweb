@@ -1,26 +1,56 @@
-@import "tailwindcss";
-
+/* PawRun Kuwait — globals.css */
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sand: #FFF8EE;
+  --sand-dark: #F2E8D4;
+  --brown: #3D2B1F;
+  --orange: #E8622A;
+  --orange-light: #FF8C56;
+  --teal: #1D7A6B;
+  --teal-light: #E1F5EE;
+  --cream: #FFFDF8;
+  --text: #2A1A0F;
+  --muted: #7A5E4A;
+  --font-display: var(--font-righteous), cursive;
+  --font-body: var(--font-dm-sans), sans-serif;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+ 
+html {
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+ 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  background: var(--sand);
+  color: var(--text);
+  overflow-x: hidden;
 }
+ 
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+ 
+/* Utility animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+ 
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+ 
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
