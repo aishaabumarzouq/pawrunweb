@@ -325,7 +325,7 @@ export default function Home() {
  
       {/* NAV */}
       <nav className="nav">
-        <a href="#" className="nav-logo">🐾 PawRun</a>
+        <a href="#" className="nav-logo">🐾 <span style={{ color: "var(--brown)" }}>Paw</span><span style={{ color: "var(--orange)" }}>Run</span></a>
         <ul className="nav-links">
           <li><a href="#how">How It Works</a></li>
           <li><a href="#pricing">Pricing</a></li>
