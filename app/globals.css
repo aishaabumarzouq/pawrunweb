@@ -7,18 +7,28 @@
 }
  
 :root {
-  --sand: #FFF8EE;
-  --sand-dark: #F2E8D4;
-  --brown: #3D2B1F;
-  --orange: #E8622A;
-  --orange-light: #FF8C56;
-  --teal: #1D7A6B;
-  --teal-light: #E1F5EE;
-  --cream: #FFFDF8;
-  --text: #2A1A0F;
-  --muted: #7A5E4A;
+  --bg:           #3C4D24;   /* dark olive green — main background */
+  --bg-alt:       #2E3A1A;   /* deeper green for contrast sections */
+  --bg-card:      #4A5C2E;   /* slightly lighter green for cards */
+  --lime:         #9EC26D;   /* lime green accent */
+  --lime-light:   #C8E8A0;   /* lighter lime for hover/tints */
+  --cream:        #F7F0E7;   /* main text + CTA background */
+  --cream-muted:  #C8BFB2;   /* muted cream for secondary text */
+  --white:        #FFFFFF;
+  --text:         #F7F0E7;   /* primary text = cream */
+  --muted:        #C8BFB2;   /* secondary text */
+ 
+  /* Backwards-compat aliases used in page.tsx inline styles */
+  --sand:         #3C4D24;
+  --sand-dark:    #2E3A1A;
+  --brown:        #3C4D24;
+  --orange:       #9EC26D;
+  --orange-light: #C8E8A0;
+  --teal:         #9EC26D;
+  --teal-light:   rgba(158,194,109,0.15);
+ 
   --font-display: var(--font-righteous), cursive;
-  --font-body: var(--font-dm-sans), sans-serif;
+  --font-body:    var(--font-dm-sans), sans-serif;
 }
  
 html {
@@ -27,17 +37,15 @@ html {
  
 body {
   font-family: var(--font-body);
-  background: var(--sand);
+  background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
 }
  
-/* Typography */
 h1, h2, h3 {
   font-family: var(--font-display);
 }
  
-/* Utility animations */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
@@ -53,4 +61,3 @@ h1, h2, h3 {
   opacity: 1;
   transform: translateY(0);
 }
- 
