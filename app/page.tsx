@@ -462,7 +462,7 @@ export default function Home() {
             <h2 className="section-h2">We cover Kuwait&apos;s top neighbourhoods.</h2>
             <p className="section-intro">Operating across all major residential districts, 7 days a week.</p>
             <div className="district-grid">
-              {["Kuwait City","Salmiya","Mishref","Bayan","Rumaithiya","Fintas","Jabriya","Hawalli"].map((d) => (
+              {["Kuwait City","Salmiya","Mishref","Bayan","Salwa","Fintas","Jabriya","& more"].map((d) => (
                 <div className="district-pill" key={d}>{d}</div>
               ))}
             </div>
@@ -472,11 +472,11 @@ export default function Home() {
               <h3>🕐 Operating Hours</h3>
               <div className="hours-row">
                 <span className="hours-label">Morning Slot</span>
-                <span className="hours-time">7:00 AM – 1:00 PM</span>
+                <span className="hours-time">8:00 AM – 1:00 PM</span>
               </div>
               <div className="hours-row">
                 <span className="hours-label">Evening Slot</span>
-                <span className="hours-time">5:00 PM – 9:00 PM</span>
+                <span className="hours-time">3:00 PM – 7:00 PM</span>
               </div>
               <div className="hours-row">
                 <span className="hours-label">Days</span>
@@ -497,10 +497,10 @@ export default function Home() {
             <span className="section-label">The Founder</span>
             <h2 className="section-h2">Built by a dog owner who felt the problem.</h2>
             <p style={{ fontSize: "1rem", color: "var(--cream-muted)", lineHeight: 1.8, fontWeight: 300, marginBottom: "1.5rem" }}>
-              PawRun Kuwait was founded by Aisha Abu-Marzouq, a Kuwaiti national who experienced firsthand how impossible it was to properly exercise her dog in Kuwait. No parks. Brutal heat. Zero solutions.
+              PawRun Kuwait was founded by Aisha Abu-Marzouq, a Kuwaiti who experienced firsthand how impossible it was to properly exercise her dog in Kuwait. No parks. Brutal heat. Zero safe solutions.
             </p>
             <p style={{ fontSize: "1rem", color: "var(--cream-muted)", lineHeight: 1.8, fontWeight: 300 }}>
-              With a background in advertising and marketing strategy, Aisha built PawRun to fill a gap that was obvious to every dog owner in Kuwait — and invisible to everyone else. PawRun is 100% Kuwaiti-owned and operated.
+             Aisha built PawRun to fill a gap that was obvious to every dog owner in Kuwait — and invisible to everyone else. PawRun is 100% Kuwaiti-owned and operated.
             </p>
           </div>
           <div className="founder-card">
@@ -511,9 +511,7 @@ export default function Home() {
               &ldquo;I got tired of watching my dog pace the apartment in summer. I wanted a real solution — so I built one.&rdquo;
             </div>
             <div className="creds">
-              <span className="cred-badge">B.A. Advertising</span>
-              <span className="cred-badge">M.Sc. Marketing</span>
-              <span className="cred-badge">Kuwaiti National</span>
+              <span className="cred-badge">Dog Lover</span>
             </div>
           </div>
         </div>
@@ -524,7 +522,7 @@ export default function Home() {
         <span className="section-label">Get Started</span>
         <h2 className="section-h2">Ready to run? 🐾</h2>
         <p>Book your first session in minutes. Your dog is waiting.</p>
-        <a href="https://wa.me/96597188955" className="btn-white">
+        <a href="https://wa.me/96596963421" className="btn-white">
           📱 Book on WhatsApp
         </a>
         <br />
